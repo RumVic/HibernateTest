@@ -10,7 +10,7 @@ import java.io.Serializable;
 public class Person implements Serializable {
     @Id
     @GeneratedValue
-    private long id;
+    private Long id;
     @Column
     private long age;
     @Column
@@ -21,7 +21,7 @@ public class Person implements Serializable {
     public Person() {
     }
 
-    public Person(long id, long age, String name, String surname) {
+    public Person(Long id, long age, String name, String surname) {
         this.id = id;
         this.age = age;
         this.name = name;
@@ -32,7 +32,7 @@ public class Person implements Serializable {
         return id;
     }
 
-    public void setId(long id) {
+    public void setId(Long id) {
         this.id = id;
     }
 
