@@ -28,7 +28,7 @@ public class Person implements Serializable {
         this.surname = surname;
     }
 
-    public long getId() {
+    public Long getId() {
         return id;
     }
 
